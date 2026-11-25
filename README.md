@@ -25,6 +25,7 @@ Many skills in this repo are open source (Apache 2.0). We've also included the d
 
 # Skill Sets
 - [./skills](./skills): Skill examples for Creative & Design, Development & Technical, Enterprise & Communication, and Document Skills
+- Domain skills ([`domain-skills`](./.claude-plugin/marketplace.json) plugin): [marketing-smm](./skills/marketing-smm), [finance-accounting](./skills/finance-accounting), [legal-assistant](./skills/legal-assistant), [hr-recruiting](./skills/hr-recruiting), [it-engineering](./skills/it-engineering)
 - [./spec](./spec): The Agent Skills specification
 - [./template](./template): Skill template
 
