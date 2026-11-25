@@ -40,8 +40,7 @@
         "./skills/web-artifacts-builder",
         "./skills/webapp-testing"
       ]
-    }
-    ,
+    },
     {
       "name": "claude-api",
       "description": "Claude API and SDK documentation skill for building LLM-powered applications",
@@ -67,6 +66,19 @@
       "strict": false,
       "skills": [
         "./skills/discernment-nudge"
+      ]
+    },
+    {
+      "name": "domain-skills",
+      "description": "Domain skills for marketing & SMM, finance & accounting, legal, HR & recruiting, and IT engineering (sysadmin, development, diagnostics)",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/marketing-smm",
+        "./skills/finance-accounting",
+        "./skills/legal-assistant",
+        "./skills/hr-recruiting",
+        "./skills/it-engineering"
       ]
     }
   ]

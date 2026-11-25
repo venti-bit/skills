@@ -403,3 +403,14 @@ This license becomes null and void if any of the above conditions are not met.
 DISCLAIMER
 
 THE FONT SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT OF COPYRIGHT, PATENT, TRADEMARK, OR OTHER RIGHT. IN NO EVENT SHALL THE COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, INCLUDING ANY GENERAL, SPECIAL, INDIRECT, INCIDENTAL, OR CONSEQUENTIAL DAMAGES, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF THE USE OR INABILITY TO USE THE FONT SOFTWARE OR FROM OTHER DEALINGS IN THE FONT SOFTWARE.  
+## **Apache License 2.0 — anthropics/knowledge-work-plugins**
+
+Portions of the following skills are adapted (modified) from [anthropics/knowledge-work-plugins](https://github.com/anthropics/knowledge-work-plugins), Copyright Anthropic, licensed under the Apache License, Version 2.0:
+
+- `skills/legal-assistant/references/nda-triage.md`, `risk-assessment.md`, `playbook-template.md`, and parts of `contract-review.md` (from `legal/skills/triage-nda`, `legal-risk-assessment`, `review-contract`)
+- `skills/finance-accounting/references/variance-analysis.md` and the month-end close section of `bookkeeping.md` (from `finance/skills/variance-analysis`, `close-management`)
+- `skills/it-engineering/references/incident-response.md`, `change-management.md` (from `engineering/skills/incident-response`, `deploy-checklist`, `architecture`)
+- `skills/marketing-smm/references/brand-review.md`, `seo-audit.md`, and the email section of `copywriting-frameworks.md` (from `marketing/skills/brand-review`, `seo-audit`, `email-sequence`)
+- `skills/hr-recruiting/references/compensation-and-analytics.md` (from `human-resources/skills/comp-analysis`, `people-report`, `performance-review`)
+
+Changes: content condensed, generalised for any jurisdiction and currency, connector-specific steps removed, and integrated with the existing skills. The full license text is included in each skill's `LICENSE.txt` and at https://www.apache.org/licenses/LICENSE-2.0.
