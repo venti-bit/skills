@@ -1,6 +1,7 @@
 ---
 name: finance-accounting
-description: Finance and accounting work - analyzing financial statements (P&L, balance sheet, cash flow), budgets and forecasts, unit economics, financial models, cash-flow planning, pricing and break-even, investment metrics (NPV, IRR, payback), variance analysis, and bookkeeping questions (journal entries, accruals, reconciliation). Use whenever the user shares financial data or asks a money/numbers question about a business, even casually ("are we profitable?", "check this budget", "how much runway do we have").
+description: Finance and accounting work - analyzing financial statements (P&L, balance sheet, cash flow), budgets and forecasts, unit economics, financial models, cash-flow planning, pricing and break-even, investment metrics (NPV, IRR, payback), variance analysis (price/volume/mix, waterfalls), month-end close, and bookkeeping questions (journal entries, accruals, reconciliation). Use whenever the user shares financial data or asks a money/numbers question about a business, even casually ("are we profitable?", "check this budget", "how much runway do we have").
+license: Apache-2.0. Includes material adapted from anthropics/knowledge-work-plugins; see LICENSE.txt
 ---
 
 # Finance & Accounting
@@ -20,9 +21,12 @@ Act as a careful financial analyst. Accuracy and traceability of every number ma
 
 | Task | Load |
 |---|---|
-| Financial statement analysis, ratios, variance analysis | `references/analysis.md` |
+| Financial statement analysis, ratios, cash & runway | `references/analysis.md` |
+| Plan vs. actual, price/volume/mix, variance commentary, waterfalls, forecast accuracy | `references/variance-analysis.md` |
 | Budgets, forecasts, financial models, unit economics, investment appraisal | `references/modeling.md` |
-| Bookkeeping: journal entries, accruals, reconciliation, close checklist | `references/bookkeeping.md` |
+| Bookkeeping: journal entries, accruals, reconciliation, month-end close calendar | `references/bookkeeping.md` |
+
+If the user keeps a finance settings file (chart of accounts, materiality thresholds, close calendar, reporting currency — e.g. `finance-settings.md`), load it first and use it over the defaults.
 
 If the deliverable should be a spreadsheet, build it with live formulas (not hard-coded results) using the xlsx skill if available, with inputs/assumptions on a separate, clearly coloured sheet.
 

@@ -1,6 +1,7 @@
 ---
 name: it-engineering
-description: IT, system administration, software development, and troubleshooting - diagnosing outages and errors (servers, networks, DNS, TLS, disks, memory, CPU, containers, databases), reading logs and stack traces, Linux/Windows administration, Docker/Kubernetes, CI/CD, shell scripting and automation, writing and reviewing code, debugging, performance tuning, and security hardening. Use whenever the user reports something broken or slow ("site is down", "server won't boot", "app throws 500", "disk full"), pastes logs or errors, or asks for admin, DevOps, or coding help.
+description: IT, system administration, software development, and troubleshooting - diagnosing outages and errors (servers, networks, DNS, TLS, disks, memory, CPU, containers, databases), reading logs and stack traces, Linux/Windows administration, Docker/Kubernetes, CI/CD, deploy checklists, incident response and postmortems, architecture decisions (ADR), shell scripting and automation, writing and reviewing code, debugging, performance tuning, and security hardening. Use whenever the user reports something broken or slow ("site is down", "server won't boot", "app throws 500", "disk full"), pastes logs or errors, or asks for admin, DevOps, or coding help.
+license: Apache-2.0. Includes material adapted from anthropics/knowledge-work-plugins; see LICENSE.txt
 ---
 
 # IT Engineering: Sysadmin, Development, Diagnostics
@@ -25,6 +26,10 @@ Work like a senior engineer on call: methodical, evidence-driven, and careful wi
 | Something is broken / slow / down; logs and errors | `references/troubleshooting.md` |
 | Linux/Windows admin, networking, Docker/Kubernetes, backups, security hardening | `references/sysadmin.md` |
 | Writing, reviewing, debugging code; scripts; CI/CD | `references/development.md` |
+| Running an incident: severity, roles, status updates, postmortem | `references/incident-response.md` |
+| Pre-deploy checklist, rollback triggers, architecture decision records (ADR) | `references/change-management.md` |
+
+If the project has an ops runbook or settings file (stack, environments, deploy process, on-call contacts, e.g. `RUNBOOK.md` or `ops-settings.md`), read it first.
 
 ## Diagnostic method (summary)
 
@@ -47,4 +52,4 @@ Prevent: <monitoring / config / process change>
 ```
 
 If more data is needed, give the exact commands to collect it and say what each output will tell you.
-For a postmortem, use: summary, impact, timeline, root cause, contributing factors, what went well, action items (owner, due date) — blameless tone.
+For a live incident with several people involved, also run the process in `references/incident-response.md` (severity, roles, update cadence); write the postmortem with its template.

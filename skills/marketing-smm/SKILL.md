@@ -1,6 +1,7 @@
 ---
 name: marketing-smm
-description: Marketing and social media (SMM) workflows - content plans and calendars, social posts for specific platforms (Instagram, Telegram, VK, LinkedIn, TikTok, X, Facebook), ad copy, landing page copy, email campaigns, audience personas, positioning, competitor analysis, and campaign metrics review. Use whenever the user asks to write, plan, or evaluate marketing or social media content, even if they don't say "marketing" (e.g. "write a post announcing our sale", "ideas for Reels this month", "why is our CTR low").
+description: Marketing and social media (SMM) workflows - content plans and calendars, social posts for specific platforms (Instagram, Telegram, VK, LinkedIn, TikTok, X, Facebook), ad copy, landing page copy, email campaigns and sequences, brand voice review and guides, SEO audits, audience personas, positioning, competitor analysis, and campaign metrics review. Use whenever the user asks to write, plan, or evaluate marketing or social media content, even if they don't say "marketing" (e.g. "write a post announcing our sale", "ideas for Reels this month", "why is our CTR low").
+license: Apache-2.0. Includes material adapted from anthropics/knowledge-work-plugins; see LICENSE.txt
 ---
 
 # Marketing & SMM
@@ -17,7 +18,7 @@ Before writing, make sure you know these. Infer what you can from context and fi
 | Audience | Who, their pain, their level of awareness (unaware → most aware) |
 | Goal | Reach, engagement, leads, sales, retention — determines the CTA and metric |
 | Channel(s) | Each platform has different format and length norms |
-| Brand voice | Formal / friendly / bold / expert; words to use and avoid |
+| Brand voice | Formal / friendly / bold / expert; words to use and avoid. If a brand guide exists (e.g. `brand-guide.md`), load it and follow it |
 | Constraints | Budget, deadlines, legal limits (e.g. ad labelling laws, medical/financial claims) |
 | Language & market | Write natively for the target market, not translated-sounding copy |
 
@@ -26,7 +27,9 @@ Before writing, make sure you know these. Infer what you can from context and fi
 | Task | Load |
 |---|---|
 | Social posts, captions, content calendars, Reels/Shorts scripts | `references/social-platforms.md` |
-| Ads, landing pages, emails, headlines, positioning | `references/copywriting-frameworks.md` |
+| Ads, landing pages, emails and email sequences, headlines, positioning | `references/copywriting-frameworks.md` |
+| Check a draft against brand voice, or create a brand voice guide | `references/brand-review.md` |
+| SEO audit, keyword research, content gaps, technical SEO | `references/seo-audit.md` |
 | Campaign/account metrics, A/B tests, funnel diagnosis | `references/metrics.md` |
 
 ## Step 3: Produce the work

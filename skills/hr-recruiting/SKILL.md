@@ -1,6 +1,7 @@
 ---
 name: hr-recruiting
-description: HR and recruiting workflows - writing job descriptions and vacancy posts, screening and comparing resumes/CVs against requirements, structured interview plans and scorecards, test assignments, candidate outreach and rejection messages, offers, onboarding plans, performance reviews and feedback, competency matrices, employee surveys, and HR policies. Use whenever the user is hiring, evaluating candidates or employees, or writing people-related documents, even if phrased casually ("help me find a good backend dev", "how do I give feedback to my team lead").
+description: HR and recruiting workflows - writing job descriptions and vacancy posts, screening and comparing resumes/CVs against requirements, structured interview plans and scorecards, test assignments, candidate outreach and rejection messages, offers, compensation benchmarking and pay bands, people analytics (headcount, attrition), onboarding plans, performance reviews, calibration and feedback, competency matrices, employee surveys, and HR policies. Use whenever the user is hiring, evaluating candidates or employees, or writing people-related documents, even if phrased casually ("help me find a good backend dev", "how do I give feedback to my team lead").
+license: Apache-2.0. Includes material adapted from anthropics/knowledge-work-plugins; see LICENSE.txt
 ---
 
 # HR & Recruiting
@@ -22,6 +23,9 @@ Help hire well and manage people fairly. Output should be structured, evidence-b
 | Job descriptions, vacancy posts, sourcing, outreach | `references/hiring.md` (section 1-2) |
 | Resume screening, interviews, scorecards, test tasks, offers | `references/hiring.md` (section 3-5) |
 | Onboarding, performance reviews, feedback, competency matrix, policies, surveys | `references/people-management.md` |
+| Salary benchmarks, pay bands, compa-ratio, pay equity; headcount/attrition reports; rating calibration | `references/compensation-and-analytics.md` |
+
+If the company has an HR settings file (levels, pay bands, review cycle, policies, e.g. `hr-settings.md`), load it first and use it over generic defaults.
 
 ## Resume screening output
 

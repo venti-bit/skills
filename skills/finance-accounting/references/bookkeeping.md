@@ -21,9 +21,30 @@ Account names and numbering differ by jurisdiction's chart of accounts — map t
 4. Adjusted balances must match; list every reconciling item
 With CSV exports, match transactions programmatically by amount + date window + reference, then review unmatched items.
 
-## Month-end close checklist
+## Month-end close
+
+> Close calendar and dependency levels adapted (modified) from [anthropics/knowledge-work-plugins](https://github.com/anthropics/knowledge-work-plugins) `finance/skills/close-management`, Apache-2.0. Compress for a small business (often 2-3 days) or extend for groups.
+
+### Calendar (T = month end, business days)
+- **Pre-close (T−3…T):** send calendar and deadlines; agree cut-off with payables, receivables, payroll, treasury; preliminary bank rec; review open purchase orders for accruals; collect info on unusual transactions.
+- **T+1:** subledgers closed; accrue goods/services received but not invoiced; payroll and payroll accrual; cash receipts/payments to month end; intercompany postings; final bank rec; depreciation; prepaid amortisation.
+- **T+2:** revenue recognition and deferred revenue; remaining accruals; receivables and payables subledger recs; inventory adjustments; FX revaluation; start balance sheet recs.
+- **T+3:** finish all balance sheet recs and post adjustments; intercompany rec and eliminations; preliminary trial balance and P&L; first flux review.
+- **T+4:** tax entries (income tax, VAT/sales tax); equity roll-forward; soft close; draft statements; detailed flux with variance commentary (`variance-analysis.md`); management review.
+- **T+5:** final adjustments; hard close and lock the period; distribute reporting pack; update forecast; short retrospective on what slowed the close.
+
+### Dependencies (what must finish first)
+1. Cash entries, bank statements, payroll, depreciation, prepaid amortisation, payables accruals, intercompany postings — no dependencies
+2. Bank rec, revenue recognition, receivables/payables recs, FX revaluation, remaining accruals — need level 1
+3. All balance sheet recs, intercompany rec, adjusting entries, preliminary trial balance — need level 2
+4. Tax, equity roll-forward, consolidation, draft statements, flux — need level 3
+5. Management review, final adjustments, period lock, reporting, forecast update — need level 4
+
+When asked to plan or track a close, produce a table: task | owner | day | depends on | status (not started / in progress / done / blocked) | notes — and highlight blocked items on the critical path.
+
+### Close checklist
 - All bank and card accounts reconciled
-- AR/AP aging reviewed; doubtful debts provision considered
+- Receivables/payables ageing reviewed; doubtful debt provision considered
 - Accruals and prepayments posted
 - Depreciation and amortisation posted
 - Inventory counted/valued

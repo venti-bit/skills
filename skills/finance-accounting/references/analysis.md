@@ -27,12 +27,7 @@
 Interpret ratios against: the company's own history, the industry, and the user's targets — a ratio alone means little.
 
 ## Variance analysis (plan vs. actual)
-
-Table: line | plan | actual | variance abs | variance % | favourable/unfavourable | explanation.
-Decompose revenue variance into **volume**, **price**, and **mix** effects:
-- Volume effect = (actual qty − plan qty) × plan price
-- Price effect = (actual price − plan price) × actual qty
-Focus commentary on the few lines that explain most of the variance (Pareto).
+See `variance-analysis.md` for price/volume/mix decomposition, materiality thresholds, commentary and waterfalls.
 
 ## Cash & runway
 - Monthly net burn = cash out − cash in (operating + investing, excluding financing)
